@@ -1,0 +1,33 @@
+DROP TABLE student;
+CREATE TABLE student(
+    student_id INT AUTO_INCREMENT,
+    name VARCHAR(20) NOT NULL,
+    major VARCHAR(20) DEFAULT 'undecided', 
+    PRIMARY KEY(student_id)
+);
+
+SELECT * FROM student;
+
+#INSERT INTO student VALUES(1, 'Jack', 'Biology');
+#INSERT INTO student VALUES(2, 'Kate', 'Sociology');
+#INSERT INTO student VALUES(3, 'Claire', 'English');
+#INSERT INTO student VALUES(4, 'Jack', 'Biology');
+#INSERT INTO student VALUES(5, 'Mike', 'Comp. Sci');
+#INSERT INTO student(student_id, name) VALUES(6, 'Matheus')
+
+
+INSERT INTO student (name, major) VALUES('Jack', 'Biology');
+INSERT INTO student (name, major) VALUES('Kate', 'Sociology');
+INSERT INTO student (name, major) VALUES('Matheus', 'Chemestry');
+
+#UPDATE student 
+#SET major = 'Biochemestry'
+#WHERE major = 'Bio' or major = 'Chemestry';
+
+UPDATE student 
+
+SET major = 'undefined', name = 'Irineu'
+WHERE  student_id = 1;
+
+DELETE FROM student
+WHERE name = 'Tom' AND major = 'undefined';
