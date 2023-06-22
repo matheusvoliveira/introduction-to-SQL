@@ -32,3 +32,20 @@ WHERE  student_id = 1;
 
 DELETE FROM student
 WHERE name = 'Tom' AND major = 'undefined';
+
+#SELECT name FROM student
+#ORDER BY name;
+
+#SELECT * FROM student
+#ORDER BY student_id DESC 
+#LIMIT 2;
+
+#SELECT * FROM student 
+#where major = 'Biochemestry' OR name = 'Matheus';
+
+#SELECT * FROM student 
+#WHERE student_id < 3
+#ORDER BY student_id DESC;
+
+SELECT name, major FROM student WHERE name IN ('Matheus', 'Irineu')
+DROP TABLE student;
