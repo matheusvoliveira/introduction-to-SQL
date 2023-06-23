@@ -140,3 +140,24 @@ SELECT SUM(total_sales), emp_id FROM works_with GROUP BY emp_id;
 
 # When the name finish with LLC 
 SELECT * FROM client WHERE client_name LIKE '%LLC';
+
+# The double %% can show you if this string is in the table
+#SELECT * FROM client WHERE client_name LIKE '%school%';
+
+
+#SELECT first_name FROM employee
+#UNION 
+#SELECT branch_name FROM branch;
+
+#SELECT client_name FROM client
+#UNION 
+#SELECT branch_id FROM branch_supplier;
+
+#INSERT INTO branch VALUES(4, 'Buffalo', NULL, NULL);
+#SELECT * FROM branch;
+
+
+#SELECT employee.emp_id, employee.first_name,
+#FROM employee 
+#JOIN branch
+#ON employee.emp_id = branch.mgr_id;
